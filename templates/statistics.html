@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Statistics</title>
+{% endblock title %}
+
+{% block content %}
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+    <div class="container">
+        <hr>
+        <section class="wow fadeIn">
+
+            <!--Section heading-->
+            <h3 class="h2 text-center my-5 font-weight-bold">Statistics - Tasty News</h3>
+
+            <div class="row-modify text-left mb-5">
+
+                <div class="list-group col-md-6 mt-2 ">
+
+                    <!--Pie chart-->
+                    <div style="width: 100%;">
+                        <canvas id="articles-pie-chart" data-url="{% url 'core:chart-1' %}"></canvas>
+                    </div>
+
+                </div>
+
+                <div class="list-group col-md-6 mt-2">
+
+                    <!--Pie chart-->
+                    <div style="width: 100%;">
+                        <canvas id="articles-bar-chart" data-url="{% url 'core:chart-2' %}"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+            <div class="row-modify text-left mb-5">
+
+                <div class="list-group col-md-6 mt-2 ">
+
+                    <!--Pie chart-->
+                    <div style="width: 100%;">
+                        <canvas id="top-en-word-chart" data-url="{% url 'core:chart-3' %}"></canvas>
+                    </div>
+
+                </div>
+
+                <div class="list-group col-md-6 mt-2">
+
+                    <!--Pie chart-->
+                    <div style="width: 100%;">
+                        <canvas id="top-pl-word-chart" data-url="{% url 'core:chart-4' %}"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+            <hr>
+
+        </section>
+        <!--/Section: Magazine v.1-->
+
+    </div>
+</main>
+<!--Main layout-->
+
+{% include 'script.html' %}
+{% endblock content %}
+
+
+
+
+

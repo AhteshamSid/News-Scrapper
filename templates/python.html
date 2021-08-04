@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Info World Python</title>
+{% endblock title %}
+
+{% block content %}
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+    <div class="container">
+
+
+        <hr class="my-5">
+
+        <!--Section: Magazine v.1-->
+        <section class="wow fadeIn">
+
+            <!--Section heading-->
+            <h2 class="h1 text-center my-5 font-weight-bold">Info World Python - Tasty News</h2>
+
+            <!--Grid row-->
+            <div class="row text-left">
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 h-100">
+
+                    {% for element in data %}
+                    <!--Small news-->
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <!--Image-->
+                            <div class="view overlay rounded z-depth-1">
+                                <img src="{{ element.2 }}" class="img-fluid" alt="Minor sample post image">
+                                <a>
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="col-md-9 mt-3">
+                            <a target="_blank" href="{{ element.0 }}">
+                                <p class="h6"><i class="pr-2 fas fa-link"></i>{{ element.1 }}</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/Small news-->
+                    <hr>
+                    {% endfor %}
+                </div>
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--/Section: Magazine v.1-->
+
+    </div>
+</main>
+<!--Main layout-->
+
+
+{% endblock content %}
+
+
+

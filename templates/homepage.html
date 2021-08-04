@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static%}
+
+{% block title %}
+<title>Tasty News</title>
+{% endblock title %}
+
+{% block content %}
+
+<!--Main layout-->
+<main class="mt-4 pt-4">
+    <div class="container">
+
+        <section class="wow fadeIn">
+
+            <!--Section heading-->
+            <h2 class="h1 text-center mt-5 font-weight-bold">Tasty News</h2>
+
+            {% if messages %}
+            {% for message in messages %}
+            <h2 class="h4 text-center text-danger my-3 font-weight-bold">{{ message }}</h2>
+            {% endfor %}
+            {% endif %}
+
+            <!--Grid row-->
+            <div class="row-modify text-left mb-5">
+
+                <div class="list-group col-md-6 mt-2 ">
+
+                    <div href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                        <img src="{% static 'img/ENG.webp' %}" class="float-left ml-1">
+                    </div>
+
+                    <a href="{% url 'core:bgg' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-dice mr-3"></i>Board Games Geek </a>
+
+                    <a href="{% url 'core:python' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fab fa-python mr-3"></i>Info World - Python </a>
+
+                    <a href="{% url 'core:real-python' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fab fa-python mr-3"></i>Real Python</a>
+
+                    <a href="{% url 'core:bushcraftable' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-tree mr-3"></i>Bushcraftable</a>
+
+                    <a href="{% url 'core:ndtv' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-tree mr-3"></i>ndtv</a>
+
+                    <div href="#" class="list-group-item list-group-item-action list-group-item-dark"></div>
+
+                </div>
+
+                <div class="list-group col-md-6 mt-2">
+
+                    <div href="#" class="list-group-item list-group-item-action list-group-item-dark">
+                        <img src="{% static 'img/PL.webp' %}" class="float-left ml-1">
+                    </div>
+
+                    <a href="{% url 'core:computer-world' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-laptop mr-3"></i></i>Computer World</a>
+
+                    <a href="{% url 'core:benchmark' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-tv mr-3"></i>Benchmark</a>
+
+                    <a href="{% url 'core:archeology' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-landmark mr-3"></i>Zwiadowca Historii</a>
+
+                    <a href="{% url 'core:tojuzbylo' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-monument mr-3"></i>To Już Było!</a>
+
+                    <a href="{% url 'core:qtv' %}"
+                       class="list-group-item list-group-item-action list-group-item-primary"><i
+                            class="fas fa-monument mr-3"></i>Qtv</a>
+
+                    <div href="#" class="list-group-item list-group-item-action list-group-item-dark"></div>
+
+                </div>
+
+            </div>
+            <!--Grid row-->
+        </section>
+    </div>
+</main>
+<!--Main layout-->
+
+
+{% endblock content %}
+

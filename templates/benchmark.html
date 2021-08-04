@@ -1,0 +1,319 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title>Benchmark</title>
+{% endblock title %}
+
+{% block content %}
+
+<!--Main layout-->
+<main class="mt-5 pt-5">
+    <div class="container">
+
+
+        <hr class="my-5">
+
+        <!--Section: Magazine v.1-->
+        <section class="wow fadeIn">
+
+            <!--Section heading-->
+            <h2 class="h1 text-center my-5 font-weight-bold">Benchmark - Tasty News</h2>
+
+            <!--Grid row-->
+            <div class="row text-left">
+
+
+                <!--Grid column-->
+                <div class="h-100 col-lg-6 col-md-12">
+                    <h4><strong>Newsy:</strong></h4>
+                    {% for element in data %}
+
+                    <!--Small news-->
+                    <div class="row">
+                        <div class="col-md-3">
+
+                            <!--Image-->
+                            <div class="view overlay rounded z-depth-1">
+                                <img src="{% static 'img/benchmark.webp'%}"
+                                     class="img-fluid" alt="Minor sample post image">
+                                <div class="mask rgba-white-slight"></div>
+                            </div>
+                        </div>
+
+                        <!--Excerpt-->
+                        <div class="col-md-9 pt-4">
+
+                            <a target="_blank" href="{{ element.0 }}">
+
+                                <p class="h6"><i class="pr-2 fas fa-link"></i> {{ element.1 }}</p>
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--/Small news-->
+
+                    <hr>
+                    {% endfor %}
+
+                </div>
+                <!--Grid column-->
+
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--/Section: Magazine v.1-->
+
+
+    </div>
+</main>
+<!--Main layout-->
+
+
+{% endblock content %}
+
+
+<!--Grid column-->
+<div class="h-100 col-lg-6 col-md-12">
+    <h4><strong>Gorące tematy:</strong></h4>
+    {% for element in benchmark_final_elements %}
+
+    <!--Small news-->
+    <div class="row">
+        <div class="col-md-3">
+
+            <!--Image-->
+            <div class="view overlay rounded z-depth-1">
+                <img src="https://pbs.twimg.com/profile_images/692289216282112000/-WBe2yQi.jpg" class="img-fluid"
+                     alt="Minor sample post image">
+
+                <div class="mask rgba-white-slight"></div>
+
+            </div>
+        </div>
+
+        <!--Excerpt-->
+        <div class="col-md-9 pt-5">
+
+            <a target="_blank" href="{{ element.0 }}">
+
+                <p class="h6">{{ element.1 }}</p>
+
+            </a>
+        </div>
+
+    </div>
+    <!--/Small news-->
+
+    <hr>
+    {% endfor %}
+
+</div>
+<!--Grid column-->
+
+
+_________________________________________________
+
+
+<section>
+    <div class="container bbh-big-slider-mode-container">
+
+        <div class="col-xs-12 col-lg-9 box box-big-heading bbh-article-list   bbh-yellow" data-offsettop="0">
+
+
+            <div class="bbh-top">
+                <h3 class="bbh-header">
+                    <a href="/1/aktualnosci.html" class="bbh-header__link" rel="nofollow"
+                       onclick="trackEvent('UX', 'home/big-box/box-header/header', 'newsy')">newsy</a></h3>
+            </div>
+            <div class="bbh-wrap">
+                <div class="bbh-swipe-collection">
+                    <div class="col-xs-12 col-tb-8">
+
+
+                        <div class="bbh-primary  bbh-primary-theme-dark">
+                            <a href="/aktualnosci/to-nie-zart-gta-5-za-darmo-na-epic-games-store.html" class="bbh-p-img"
+                               title="To nie żart! GTA 5 za darmo na Epic Games Store!"
+                               onclick="trackEvent('UX', 'home/big-box/large-box/img', 'newsy')">
+                                <picture>
+                                    <source media="(min-width: 1800px)"
+                                            srcset="//cdn.benchmark.pl/thumbs/uploads/article/75768/MODERNICON/1b47f8a653d22c107fcad47638d81bfe6b4f81c3.jpg/750x0x1.jpg">
+                                    <source media="(min-width: 480px)"
+                                            srcset="//cdn.benchmark.pl/thumbs/uploads/article/75768/MODERNICON/1b47f8a653d22c107fcad47638d81bfe6b4f81c3.jpg/530x0x1.jpg">
+                                    <source media="(min-width: 360px)"
+                                            srcset="//cdn.benchmark.pl/thumbs/uploads/article/75768/MODERNICON/1b47f8a653d22c107fcad47638d81bfe6b4f81c3.jpg/375x0x1.jpg">
+                                    <source media="(min-width: 320px)"
+                                            srcset="//cdn.benchmark.pl/thumbs/uploads/article/75768/MODERNICON/1b47f8a653d22c107fcad47638d81bfe6b4f81c3.jpg/320x0x1.jpg">
+                                    <img class=" lazyloaded"
+                                         data-src="//cdn.benchmark.pl/thumbs/uploads/article/75768/MODERNICON/1b47f8a653d22c107fcad47638d81bfe6b4f81c3.jpg/400x0x1.jpg"
+                                         alt="To nie żart! GTA 5 za darmo na Epic Games Store!"
+                                         src="//cdn.benchmark.pl/thumbs/uploads/article/75768/MODERNICON/1b47f8a653d22c107fcad47638d81bfe6b4f81c3.jpg/400x0x1.jpg">
+                                </picture>
+                            </a>
+                            <span class="bbh-p-head">
+        <span class="bbh-p-head-inner">
+                            <a href="/kategoria/gry-komputerowe.html"
+                               class="bbh-p-head-cat-link _brk-cat__gry-komputerowe"
+                               onclick="trackEvent('UX', 'home/big-box/large-box/category', 'newsy')">
+                    <span>Gry komputerowe</span>
+                </a>
+                        <h2>
+                <a href="/aktualnosci/to-nie-zart-gta-5-za-darmo-na-epic-games-store.html"
+                   onclick="trackEvent('UX', 'home/big-box/large-box/title', 'newsy')">
+                    To nie żart! GTA 5 za darmo na Epic Games Store!
+                </a>
+            </h2>
+            <span>Mateusz Tomczak</span>
+        </span>
+    </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-tb-4 ">
+                        <div class="bbh-al-list ">
+                            <ul>
+                                <li>
+
+
+                                    <a href="/aktualnosci/premiera-nvidia-ampere-znamy-szczegoly-na-temat-nowego-gpu.html"
+                                       title="Nvidia Ampere już jest! " zieloni"="" zaprezentowali="" kartę=""
+                                    graficzną="" nowej="" generacji"="" onclick="trackEvent('UX',
+                                    'home/big-box/link-box/title', 'newsy')">
+                                    Nvidia Ampere już jest! "Zieloni" zaprezentowali kartę graficzną nowej generacji
+                                    </a>                                                                    </li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/sony-imx-500-algorytmy-ai-w-sensorach-superszybkie-rozpoznawanie.html"
+                                       title="Sensory Sony z wrodzoną inteligencją do kamer cyfrowych - rozpoznawanie obiektów w mgnieniu oka"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Sensory Sony z wrodzoną inteligencją do kamer cyfrowych - rozpoznawanie obiektów
+                                        w mgnieniu oka
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/ride-4-nadjezdza-czy-spelni-marzenia-milosnikow-dwoch-kolek.html"
+                                       title="RIDE 4 nadjeżdża, by spełnić marzenia miłośników dwóch kółek"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        RIDE 4 nadjeżdża, by spełnić marzenia miłośników dwóch kółek
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/spotify-premium-za-darmo-na-3-miesiace-w-2020.html"
+                                       title="Co powiesz na Spotify Premium za darmo? Oto dlaczego warto"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Co powiesz na Spotify Premium za darmo? Oto dlaczego warto
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/amd-szykuje-mocarne-apu-specyfikacja-procesorow-ryzen-4000-apu-re.html"
+                                       title="Ryzen 4000 może namieszać także w desktopach - znamy specyfikację  procesorów pod AM4"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Ryzen 4000 może namieszać także w desktopach - znamy specyfikację procesorów pod
+                                        AM4
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/htc-vive-pro-z-half-life-alyx-w-prezencie.html"
+                                       title="Kup jedne z najlepszych gogli VR na rynku, a najlepszą grę VR otrzymasz w prezencie"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Kup jedne z najlepszych gogli VR na rynku, a najlepszą grę VR otrzymasz w
+                                        prezencie
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/zloty-a-skromny-adata-prezentuje-dyski-ssd-falcon.html"
+                                       title="SSD którym pochwalisz się na dzielni - ADATA Falcon ze złotym radiatorem"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        SSD którym pochwalisz się na dzielni - ADATA Falcon ze złotym radiatorem
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/unreal-engine-5-zwiastunem-rewolucji.html"
+                                       title="Nowe gry będą przepiękne! Zobacz prezentację silnika Unreal Engine 5"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Nowe gry będą przepiękne! Zobacz prezentację silnika Unreal Engine 5
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/francja-wymusza-usuwanie-tresci-przestepczych-w-ciagu-godziny.html"
+                                       title="Francja rusza do walki ze złem w internecie. Nowe prawo nakazuje usuwanie treści przestępczych w ciągu godziny od publikacji"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Francja rusza do walki ze złem w internecie. Nowe prawo nakazuje usuwanie treści
+                                        przestępczych w ciągu godziny od publikacji
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/znamy-ceny-procesorow-intel-core-10-gen-niektore-modele-sa-duzo-d.html"
+                                       title="Nowe procesory Intel dostępne w przedsprzedaży - ceny w złotówkach mogą Was zaskoczyć"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Nowe procesory Intel dostępne w przedsprzedaży - ceny w złotówkach mogą Was
+                                        zaskoczyć
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/mafia-trilogy-oficjalnie-zapowiedziana.html"
+                                       title="Mafia: Trilogy oficjalnie zapowiedziana"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Mafia: Trilogy oficjalnie zapowiedziana
+                                    </a></li>
+                                <li>
+
+
+                                    <a href="/aktualnosci/zabierz-psa-na-polowanie-w-hunting-simulator-2.html"
+                                       title="Poluj z psiakiem. W Hunting Simulator 2 pojawi się taka możliwość"
+                                       onclick="trackEvent('UX', 'home/big-box/link-box/title', 'newsy')">
+                                        Poluj z psiakiem. W Hunting Simulator 2 pojawi się taka możliwość
+                                    </a></li>
+                            </ul>
+                        </div>
+
+
+                        <a href="/1/aktualnosci.html" class="bbh-al-read-more">
+                            <span>Czytaj najnowsze...</span>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-lg-3">
+
+            <div class="w2g w2g-loaded" id="sg_half_1_prawa_szpalta"
+                 style="padding-top: 10px; padding-bottom: 10px; width: 160px; height: auto; min-height: 600px;">
+                <div class="label label-wtg" style="display: block;">Advertisement</div>
+                <div id="/61001724/Benchmark_RWD/sg_half_1_prawa_szpalta"
+                     data-google-query-id="CJbYrcfTs-kCFdPjGwod23cD7A">
+                    <div id="google_ads_iframe_/61001724/Benchmark_RWD/sg_half_1_prawa_szpalta_0__container__"
+                         style="border: 0pt none; margin: auto; text-align: center; width: 160px; height: 600px;">
+                        <iframe frameborder="0"
+                                src="https://902b5a527d20c5a0137e28f97e380678.safeframe.googlesyndication.com/safeframe/1-0-37/html/container.html"
+                                id="google_ads_iframe_/61001724/Benchmark_RWD/sg_half_1_prawa_szpalta_0"
+                                title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0"
+                                width="160" height="600" data-is-safeframe="true"
+                                sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
+                                data-google-container-id="3"
+                                style="border: 0px; vertical-align: bottom; width: 160px; height: 600px;"
+                                data-load-complete="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+
+
+
