@@ -1,23 +1,12 @@
-* [Visit website](https://tasty-news.herokuapp.com/)
 
 
-# Tasty News
+
+# Tasty Scraper
 
 Website created for personal purposes. It scrapes data from several other websites and shows the titles of the articles with link to main article.
 In addition it store all articles in database and show some statistics in subpage.
 
-Main View:
-![Window view](https://github.com/mateuszwwwrobel/Tasty_News/blob/master/static/img/preview_1.png?raw=true)
-
-Statistics View:
-![Window view](https://github.com/mateuszwwwrobel/Tasty_News/blob/master/static/img/preview_2.png?raw=true)
-
 ## Getting Started
-
-If you would like to visit a website please click a link below:
-(first load may take a bit longer due to herokuapp sleeping.)
-
-* [Visit website](https://tasty-news.herokuapp.com/)
 
 ## Technologies:
 
@@ -31,41 +20,19 @@ Project built with:
 
 The first thing to do is to clone the repository:
 
-```sh
-$ git clone https://github.com/mateuszwwwrobel/Tasty_News.git
-```
+# Django-Blog-Application
+Django Blog Application is built with django framework of python language
+Demo live [click](http://brsfc.herokuapp.com/home/).
+## setup on Linux or in any windows (python installed directory or better to use pycharm/vscode project directory)
 
-Create a virtual environment to install dependencies in and activate it:
-
-```sh
-$ python3 -m venv <venv-name>
-$ source <venv-name>/bin/activate
-```
-
-Then install the dependencies:
-
-```sh
-(<venv-name>)$ pip install -r requirements.txt
-```
-Note the `(venv-name)` in front of the prompt. This indicates that this terminal
-session operates in a virtual environment set up by `venv`.
-
-Once `pip` has finished downloading the dependencies:
-```sh
-(<venv-name>)$ python manage.py runserver
-```
-And navigate to `http://127.0.0.1:8000/`
+1. Clone This Project `git clone https://github.com/AhteshamSid/News-Scrapper.git`
+2. Go To Project Directory `cd News-Scrapper`
+3. Go To Project Directory
+4. Create a Virtual Environment `python -m venv venv`
+5. Activate Virtual Environment `source venv/bin/activate`
+6. Install Requirements Package `pip install -r requirements.txt`
+7. Migrate Database `python manage.py migrate`
+8. Create Super User `python manage.py createsuperuser`
+9. Finally Run The Project `python manage.py runserver`
 
 
-## Authors
-
-Wrobel Mateusz
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-For help with every trouble:
-* [Stackoverflow](https://stackoverflow.com/)
