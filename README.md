@@ -1,5 +1,5 @@
 
-
+https://djangowebscrapping.herokuapp.com/
 
 # Tasty Scraper
 
@@ -22,7 +22,7 @@ The first thing to do is to clone the repository:
 
 # Django-Blog-Application
 Django Blog Application is built with django framework of python language
-Demo live [click](http://brsfc.herokuapp.com/home/).
+Demo live [click](https://djangowebscrapping.herokuapp.com/).
 ## setup on Linux or in any windows (python installed directory or better to use pycharm/vscode project directory)
 
 1. Clone This Project `git clone https://github.com/AhteshamSid/News-Scrapper.git`
